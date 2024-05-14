@@ -1,3 +1,11 @@
+# The following python code was built in VSCode
+# Have your api key saved in a file called .env and your key should look like OPENAI_API_KEY = SK-xxxx
+# This app is built with Streamlit. To run the app, do "Streamlit Run path/to/file" in the VSCode terminal
+# To use the Gmail toolkit from Langchain, follow https://developers.google.com/gmail/api/quickstart/python#authorize_credentials_for_a_desktop_application to download the OAuth Client.
+
+pip install -U google-api-python-client google-auth-httplib2 google-auth-oauthlib beautifulsoup4
+pip install -U langchain langchain-community langchain-openai langchainhub python-dotenv streamlit
+
 import os
 import streamlit as st
 from langchain_community.agent_toolkits import GmailToolkit
